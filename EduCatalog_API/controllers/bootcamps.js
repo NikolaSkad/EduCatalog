@@ -27,6 +27,31 @@ exports.getBootcamp = asyncHandler(async (req, res, next) => {
   res.status(200).json({ success: true, data: bootcamp });
 });
 
+// @desc      Get all bootcamps for the current user
+// @route     GET /api/v1/bootcamps
+// @access    Private
+exports.getBootcampsForCurrentUser = asyncHandler(async (req, res, next) => {
+  // Fetch bootcamps for the currently logged-in user
+  const bootcamps = await Bootcamp.find({ user: req.user._id });
+
+  console.log({ bootcamps });
+
+  if (!bootcamps || bootcamps.length === 0) {
+    return next(
+      new ErrorResponse(
+        `No bootcamps found for user with ID ${req.user._id}`,
+        404
+      )
+    );
+  }
+
+  res.status(200).json({
+    success: true,
+    count: bootcamps.length,
+    data: bootcamps,
+  });
+});
+
 // @desc      Create new bootcamp
 // @route     POST /api/v1/bootcamps
 // @access    Private
