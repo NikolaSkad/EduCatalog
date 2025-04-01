@@ -6,9 +6,70 @@
     "weeks": 8,
     "tuition": 8000,
     "minimumSkill": "beginner",
-    "scholarshipsAvailable": true,
+    "scholarshipAvailable": true,
     "bootcamp": "5d713995b721c3bb38c1f5d0",
-    "user": "5d7a514b5d2c12c7449be045"
+    "user": "5d7a514b5d2c12c7449be045",
+    "image": "https://i.ytimg.com/vi/7C4dv8vuwEk/maxresdefault.jpg",
+    "whatYouWillLearn": [
+      "Master HTML5, CSS3, and modern JavaScript (ES6+)",
+      "Build responsive websites using Flexbox and CSS Grid",
+      "Understand frontend frameworks like Vue and how to use them in real projects",
+      "Learn to use VSCode, Git, and GitHub for efficient development",
+      "Implement dynamic UI with JavaScript DOM manipulation",
+      "Create interactive UIs with frontend libraries",
+      "Debug and optimize frontend code for performance",
+      "Deploy frontend apps to the web using Netlify or Vercel"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Introduction & Setup",
+        "lectures": [
+          { "lectureTitle": "Course Overview & Tools", "duration": "4:30" },
+          {
+            "lectureTitle": "Installing VSCode & Extensions",
+            "duration": "3:15"
+          },
+          { "lectureTitle": "Setting Up Git & GitHub", "duration": "5:00" },
+          { "lectureTitle": "Folder Structure & Assets", "duration": "3:45" }
+        ]
+      },
+      {
+        "sectionTitle": "HTML & CSS Essentials",
+        "lectures": [
+          { "lectureTitle": "HTML Basics & Semantic Tags", "duration": "8:20" },
+          { "lectureTitle": "Styling with CSS & Flexbox", "duration": "12:45" },
+          {
+            "lectureTitle": "CSS Grid & Responsive Design",
+            "duration": "10:10"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "JavaScript Foundations",
+        "lectures": [
+          {
+            "lectureTitle": "JavaScript Syntax & Variables",
+            "duration": "9:30"
+          },
+          { "lectureTitle": "Functions & Events", "duration": "11:00" },
+          { "lectureTitle": "DOM Manipulation Project", "duration": "14:00" }
+        ]
+      },
+      {
+        "sectionTitle": "Vue Framework Introduction",
+        "lectures": [
+          { "lectureTitle": "Setting up Vue Environment", "duration": "7:00" },
+          {
+            "lectureTitle": "Vue Directives & Components",
+            "duration": "12:30"
+          },
+          {
+            "lectureTitle": "Building a Mini App with Vue",
+            "duration": "18:45"
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725c84c4ded7bcb480eaa0",
@@ -17,9 +78,66 @@
     "weeks": 12,
     "tuition": 10000,
     "minimumSkill": "intermediate",
-    "scholarshipsAvailable": true,
+    "scholarshipAvailable": true,
     "bootcamp": "5d713995b721c3bb38c1f5d0",
-    "user": "5d7a514b5d2c12c7449be045"
+    "user": "5d7a514b5d2c12c7449be045",
+    "image": "https://codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg",
+    "whatYouWillLearn": [
+      "Build full stack applications using HTML, CSS, JavaScript, and Vue",
+      "Develop backend APIs with Node.js and Express",
+      "Integrate MongoDB for data storage and CRUD operations",
+      "Implement authentication and authorization using JWT",
+      "Build and consume RESTful APIs",
+      "Understand MVC architecture for organizing code",
+      "Handle file uploads and image processing",
+      "Deploy full stack applications to cloud platforms like Heroku"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Full Stack Overview",
+        "lectures": [
+          {
+            "lectureTitle": "What is Full Stack Development?",
+            "duration": "6:00"
+          },
+          { "lectureTitle": "Project Folder Setup", "duration": "4:30" }
+        ]
+      },
+      {
+        "sectionTitle": "Frontend Development",
+        "lectures": [
+          {
+            "lectureTitle": "HTML/CSS/JavaScript Refresher",
+            "duration": "12:00"
+          },
+          { "lectureTitle": "Frontend with Vue Basics", "duration": "15:20" }
+        ]
+      },
+      {
+        "sectionTitle": "Backend Development",
+        "lectures": [
+          { "lectureTitle": "Node.js & Express Setup", "duration": "10:00" },
+          { "lectureTitle": "REST API Development", "duration": "14:45" },
+          {
+            "lectureTitle": "Database Integration with MongoDB",
+            "duration": "11:30"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Full Stack Project",
+        "lectures": [
+          {
+            "lectureTitle": "Connecting Frontend & Backend",
+            "duration": "12:50"
+          },
+          {
+            "lectureTitle": "Deploying Full Stack Application",
+            "duration": "9:10"
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725cb9c4ded7bcb480eaa1",
@@ -28,9 +146,59 @@
     "weeks": 10,
     "tuition": 12000,
     "minimumSkill": "intermediate",
-    "scholarshipsAvailable": true,
+    "scholarshipAvailable": true,
     "bootcamp": "5d713a66ec8f2b88b8f830b8",
-    "user": "5d7a514b5d2c12c7449be046"
+    "user": "5d7a514b5d2c12c7449be046",
+    "image": "https://imarticus.org/blog/wp-content/uploads/2019/03/fl.png",
+    "whatYouWillLearn": [
+      "Build frontend interfaces with HTML, CSS, and JavaScript",
+      "Use Webpack and Git for modern development workflows",
+      "Develop backend with C# and ASP.NET MVC framework",
+      "Connect your app to PostgreSQL databases",
+      "Learn server-side rendering and API development with .NET",
+      "Implement secure authentication and authorization",
+      "Use Entity Framework for ORM-based data handling",
+      "Deploy ASP.NET apps on Azure or IIS servers"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Getting Started",
+        "lectures": [
+          {
+            "lectureTitle": "Introduction to Full Stack & .NET",
+            "duration": "5:00"
+          },
+          { "lectureTitle": "Installing Visual Studio", "duration": "4:20" }
+        ]
+      },
+      {
+        "sectionTitle": "Frontend Development",
+        "lectures": [
+          {
+            "lectureTitle": "Building UI with HTML/CSS/JS",
+            "duration": "11:00"
+          },
+          { "lectureTitle": "Webpack Setup", "duration": "7:50" }
+        ]
+      },
+      {
+        "sectionTitle": "Backend with ASP.NET",
+        "lectures": [
+          { "lectureTitle": "C# Basics & Syntax", "duration": "8:40" },
+          {
+            "lectureTitle": "ASP.NET MVC Framework Overview",
+            "duration": "10:30"
+          },
+          { "lectureTitle": "Working with PostgreSQL", "duration": "9:00" }
+        ]
+      },
+      {
+        "sectionTitle": "Project Deployment",
+        "lectures": [
+          { "lectureTitle": "Deploying on Azure", "duration": "6:10" }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725cd2c4ded7bcb480eaa2",
@@ -39,9 +207,49 @@
     "weeks": 12,
     "tuition": 10000,
     "minimumSkill": "intermediate",
-    "scholarshipsAvailable": true,
+    "scholarshipAvailable": true,
     "bootcamp": "5d713a66ec8f2b88b8f830b8",
-    "user": "5d7a514b5d2c12c7449be046"
+    "user": "5d7a514b5d2c12c7449be046",
+    "image": "https://www.extwebtech.com/wp-content/uploads/2023/10/UI-UX-designer.webp",
+    "whatYouWillLearn": [
+      "Understand the principles of UI and UX design",
+      "Create wireframes and prototypes using Figma or Adobe XD",
+      "Apply design thinking to solve user experience problems",
+      "Design mobile and web interfaces with accessibility in mind",
+      "Conduct user research and usability testing",
+      "Work with design systems and style guides",
+      "Use CSS and design tools to create pixel-perfect interfaces",
+      "Collaborate with developers to implement designs"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Introduction to UI/UX",
+        "lectures": [
+          { "lectureTitle": "What is UI/UX?", "duration": "4:15" },
+          {
+            "lectureTitle": "Tools Overview: Figma & Adobe XD",
+            "duration": "5:20"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Design Principles",
+        "lectures": [
+          { "lectureTitle": "Color Theory & Typography", "duration": "10:45" },
+          { "lectureTitle": "Accessibility in Design", "duration": "8:00" }
+        ]
+      },
+      {
+        "sectionTitle": "Prototyping & Wireframes",
+        "lectures": [
+          { "lectureTitle": "Creating Wireframes", "duration": "12:15" },
+          {
+            "lectureTitle": "Building Interactive Prototypes",
+            "duration": "9:40"
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725ce8c4ded7bcb480eaa3",
@@ -50,9 +258,56 @@
     "weeks": 10,
     "tuition": 12000,
     "minimumSkill": "beginner",
-    "scholarshipsAvailable": true,
+    "scholarshipAvailable": true,
     "bootcamp": "5d725a037b292f5f8ceff787",
-    "user": "5c8a1d5b0190b214360dc031"
+    "user": "5c8a1d5b0190b214360dc031",
+    "image": "https://www.webundefined.com/blog/images/1.jpeg",
+    "whatYouWillLearn": [
+      "Design responsive websites with HTML, CSS, and JavaScript",
+      "Use PHP to create dynamic websites and process forms",
+      "Understand web hosting, FTP, and domain setup",
+      "Implement animations and transitions with CSS and JS",
+      "Learn basics of SEO and web performance optimization",
+      "Build simple CMS features using PHP and MySQL",
+      "Apply design fundamentals for effective web layouts",
+      "Launch your websites and update content easily"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Introduction to Web Design",
+        "lectures": [
+          { "lectureTitle": "What is Web Design?", "duration": "4:00" },
+          { "lectureTitle": "Essential Tools Overview", "duration": "3:45" }
+        ]
+      },
+      {
+        "sectionTitle": "HTML & CSS Basics",
+        "lectures": [
+          {
+            "lectureTitle": "Building Basic HTML Structure",
+            "duration": "8:15"
+          },
+          { "lectureTitle": "CSS Styling & Layouts", "duration": "12:00" }
+        ]
+      },
+      {
+        "sectionTitle": "JavaScript Essentials",
+        "lectures": [
+          { "lectureTitle": "JavaScript Fundamentals", "duration": "10:30" },
+          { "lectureTitle": "Creating Interactive UI", "duration": "9:00" }
+        ]
+      },
+      {
+        "sectionTitle": "PHP & Dynamic Content",
+        "lectures": [
+          { "lectureTitle": "Getting Started with PHP", "duration": "7:45" },
+          {
+            "lectureTitle": "Connecting to MySQL Databases",
+            "duration": "8:30"
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725cfec4ded7bcb480eaa4",
@@ -61,9 +316,65 @@
     "weeks": 10,
     "tuition": 9000,
     "minimumSkill": "intermediate",
-    "scholarshipsAvailable": false,
+    "scholarshipAvailable": false,
     "bootcamp": "5d725a037b292f5f8ceff787",
-    "user": "5c8a1d5b0190b214360dc031"
+    "user": "5c8a1d5b0190b214360dc031",
+    "image": "https://thedatascientist.com/wp-content/uploads/2023/05/what-is-data-science.jpg",
+    "whatYouWillLearn": [
+      "Master Python programming for data analysis",
+      "Use libraries like NumPy, Pandas, and Matplotlib",
+      "Apply machine learning with Scikit-learn",
+      "Work with big data tools like Spark or Hadoop",
+      "Build predictive models and evaluate them",
+      "Clean, process, and visualize complex datasets",
+      "Use Jupyter Notebooks for interactive coding",
+      "Deploy machine learning models into production"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Introduction to Data Science",
+        "lectures": [
+          { "lectureTitle": "What is Data Science?", "duration": "5:00" },
+          {
+            "lectureTitle": "Setting Up Python Environment",
+            "duration": "6:00"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Python for Data Analysis",
+        "lectures": [
+          { "lectureTitle": "Using NumPy & Pandas", "duration": "12:45" },
+          {
+            "lectureTitle": "Data Visualization with Matplotlib",
+            "duration": "9:30"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Machine Learning Basics",
+        "lectures": [
+          {
+            "lectureTitle": "Supervised vs Unsupervised Learning",
+            "duration": "10:50"
+          },
+          { "lectureTitle": "Scikit-learn Workflow", "duration": "13:40" }
+        ]
+      },
+      {
+        "sectionTitle": "Big Data Tools",
+        "lectures": [
+          {
+            "lectureTitle": "Introduction to Spark & Hadoop",
+            "duration": "11:25"
+          },
+          {
+            "lectureTitle": "Real-World Data Science Project",
+            "duration": "15:00"
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725cfec4ded7bcb480eaa5",
@@ -72,9 +383,62 @@
     "weeks": 8,
     "tuition": 8000,
     "minimumSkill": "beginner",
-    "scholarshipsAvailable": false,
+    "scholarshipAvailable": false,
     "bootcamp": "5d725a1b7b292f5f8ceff788",
-    "user": "5c8a1d5b0190b214360dc032"
+    "user": "5c8a1d5b0190b214360dc032",
+    "image": "https://www.susla.edu/assets/susla/images/WebDevelopmentImage.jpeg",
+    "whatYouWillLearn": [
+      "Build web applications using React and Node.js",
+      "Use PHP and Laravel for backend development",
+      "Develop APIs and connect frontend to backend",
+      "Manage state with React hooks and context",
+      "Style apps with Tailwind CSS and Styled Components",
+      "Implement user authentication and secure sessions",
+      "Test your apps with Jest or PHPUnit",
+      "Deploy full-stack apps using cloud platforms"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Course Overview & Environment Setup",
+        "lectures": [
+          {
+            "lectureTitle": "Installing Node.js, PHP & Laravel",
+            "duration": "5:10"
+          },
+          { "lectureTitle": "Setting up React Environment", "duration": "7:00" }
+        ]
+      },
+      {
+        "sectionTitle": "Frontend Development",
+        "lectures": [
+          { "lectureTitle": "React Components & JSX", "duration": "10:40" },
+          { "lectureTitle": "Styling with Tailwind CSS", "duration": "9:30" }
+        ]
+      },
+      {
+        "sectionTitle": "Backend Development",
+        "lectures": [
+          {
+            "lectureTitle": "Building REST APIs with Node.js",
+            "duration": "12:30"
+          },
+          {
+            "lectureTitle": "Working with PHP & Laravel Basics",
+            "duration": "11:00"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Full Stack Project",
+        "lectures": [
+          {
+            "lectureTitle": "Integrating Frontend & Backend",
+            "duration": "13:20"
+          },
+          { "lectureTitle": "Deployment & Hosting", "duration": "8:45" }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725cfec4ded7bcb480eaa6",
@@ -83,9 +447,62 @@
     "weeks": 6,
     "tuition": 5000,
     "minimumSkill": "intermediate",
-    "scholarshipsAvailable": false,
+    "scholarshipAvailable": false,
     "bootcamp": "5d725a1b7b292f5f8ceff788",
-    "user": "5c8a1d5b0190b214360dc032"
+    "user": "5c8a1d5b0190b214360dc032",
+    "image": "https://cdn.prod.website-files.com/619e15d781b21202de206fb5/64ba203842f7724f06314fd6_QA-testing-Everything-you-need-to-know.webp",
+    "whatYouWillLearn": [
+      "Understand software testing fundamentals and QA methodologies",
+      "Perform manual testing and write test cases",
+      "Automate testing using Selenium or Cypress",
+      "Track bugs and issues using JIRA",
+      "Use version control with Git in QA workflows",
+      "Write scripts for test automation in JavaScript or Python",
+      "Understand CI/CD pipelines and QA integration",
+      "Perform performance and security testing"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Introduction to Software QA",
+        "lectures": [
+          {
+            "lectureTitle": "Understanding QA & Testing Types",
+            "duration": "6:30"
+          },
+          { "lectureTitle": "QA Tools Overview", "duration": "4:45" }
+        ]
+      },
+      {
+        "sectionTitle": "Manual Testing Basics",
+        "lectures": [
+          {
+            "lectureTitle": "Writing Test Cases & Bug Reports",
+            "duration": "9:20"
+          },
+          {
+            "lectureTitle": "Functional & Regression Testing",
+            "duration": "10:30"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Automation Testing",
+        "lectures": [
+          { "lectureTitle": "Introduction to Selenium", "duration": "11:00" },
+          { "lectureTitle": "Setting up Cypress", "duration": "8:50" }
+        ]
+      },
+      {
+        "sectionTitle": "Performance & Security Testing",
+        "lectures": [
+          { "lectureTitle": "Load Testing Basics", "duration": "7:45" },
+          {
+            "lectureTitle": "Security Testing Fundamentals",
+            "duration": "8:20"
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "5d725cfec4ded7bcb480eaa7",
@@ -94,8 +511,256 @@
     "weeks": 8,
     "tuition": 6000,
     "minimumSkill": "intermediate",
-    "scholarshipsAvailable": false,
+    "scholarshipAvailable": false,
     "bootcamp": "5d725a1b7b292f5f8ceff788",
-    "user": "5c8a1d5b0190b214360dc032"
+    "user": "5c8a1d5b0190b214360dc032",
+    "image": "https://www.techosquare.com/images/blog/iphone-ios-mobile-application-development-home.jpg",
+    "whatYouWillLearn": [
+      "Develop iOS apps using Swift and Xcode",
+      "Build UI with SwiftUI and Interface Builder",
+      "Work with APIs and handle JSON data in mobile apps",
+      "Implement navigation, animations, and gestures",
+      "Use Core Data for local app storage",
+      "Understand Apple’s Human Interface Guidelines",
+      "Test and debug apps with Xcode tools",
+      "Publish apps to the App Store with proper signing"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Getting Started with iOS Development",
+        "lectures": [
+          { "lectureTitle": "Installing Xcode & Tools", "duration": "5:15" },
+          { "lectureTitle": "Swift Language Basics", "duration": "9:00" }
+        ]
+      },
+      {
+        "sectionTitle": "Building iOS UI",
+        "lectures": [
+          { "lectureTitle": "SwiftUI Fundamentals", "duration": "12:30" },
+          {
+            "lectureTitle": "Working with Interface Builder",
+            "duration": "8:20"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "App Functionality",
+        "lectures": [
+          {
+            "lectureTitle": "Networking & API Integration",
+            "duration": "10:50"
+          },
+          { "lectureTitle": "Using Core Data for Storage", "duration": "9:35" }
+        ]
+      },
+      {
+        "sectionTitle": "Publishing to App Store",
+        "lectures": [
+          { "lectureTitle": "App Store Guidelines", "duration": "6:10" },
+          { "lectureTitle": "Code Signing & Submission", "duration": "7:00" }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d725cfec4ded7bcb480eaa8",
+    "title": "AI Development",
+    "description": "Dive into artificial intelligence and machine learning concepts with practical applications using Python and TensorFlow.",
+    "weeks": 10,
+    "tuition": 7000,
+    "minimumSkill": "intermediate",
+    "scholarshipAvailable": true,
+    "bootcamp": "5d713995b721c3bb38c1f5f1",
+    "user": "5d7a514b5d2c12c7449be043",
+    "image": "https://blogs.debutinfotech.com/wp-content/uploads/2024/04/Artificial-Intelligence-Development.jpg",
+    "whatYouWillLearn": [
+      "Implement machine learning models using Python",
+      "Understand neural networks and deep learning",
+      "Work with TensorFlow and Keras for AI projects",
+      "Build predictive models and understand algorithms",
+      "Explore reinforcement learning and AI ethics",
+      "Process and clean datasets with Pandas",
+      "Evaluate model performance using various metrics",
+      "Deploy machine learning models in real-world environments"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Introduction to AI & Machine Learning",
+        "lectures": [
+          { "lectureTitle": "Overview of AI", "duration": "8:00" },
+          { "lectureTitle": "Python for Data Science", "duration": "7:30" }
+        ]
+      },
+      {
+        "sectionTitle": "Building AI Models",
+        "lectures": [
+          {
+            "lectureTitle": "Supervised Learning Algorithms",
+            "duration": "10:45"
+          },
+          {
+            "lectureTitle": "Unsupervised Learning & Clustering",
+            "duration": "9:00"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Advanced Topics in AI",
+        "lectures": [
+          {
+            "lectureTitle": "Deep Learning with Neural Networks",
+            "duration": "12:15"
+          },
+          {
+            "lectureTitle": "Reinforcement Learning Basics",
+            "duration": "11:20"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Deploying AI Solutions",
+        "lectures": [
+          {
+            "lectureTitle": "Model Evaluation & Optimization",
+            "duration": "9:00"
+          },
+          {
+            "lectureTitle": "Deploying ML Models with Flask",
+            "duration": "8:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d725cfec4ded7bcb480eaa9",
+    "title": "Blockchain Development",
+    "description": "Learn blockchain technology, smart contracts, and decentralized applications (dApps) with Ethereum and Solidity.",
+    "weeks": 12,
+    "tuition": 8000,
+    "minimumSkill": "intermediate",
+    "scholarshipAvailable": true,
+    "bootcamp": "5d713995b721c3bb38c1f5f1",
+    "user": "5d7a514b5d2c12c7449be043",
+    "image": "https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/loud%20%2811%29_0.png?itok=n_SwQmH7",
+    "whatYouWillLearn": [
+      "Understand blockchain fundamentals and architecture",
+      "Work with Ethereum and Solidity for smart contract development",
+      "Develop decentralized applications (dApps)",
+      "Learn about consensus algorithms and security in blockchain",
+      "Deploy and test smart contracts on Ethereum network",
+      "Explore the use of Web3.js for blockchain interaction",
+      "Integrate blockchain with existing web applications",
+      "Create secure and scalable blockchain solutions"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Blockchain Basics",
+        "lectures": [
+          { "lectureTitle": "Introduction to Blockchain", "duration": "9:00" },
+          {
+            "lectureTitle": "Ethereum & Blockchain Architecture",
+            "duration": "10:30"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Smart Contract Development",
+        "lectures": [
+          {
+            "lectureTitle": "Solidity Syntax and Concepts",
+            "duration": "11:00"
+          },
+          {
+            "lectureTitle": "Writing Smart Contracts for Ethereum",
+            "duration": "12:00"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Developing Decentralized Apps (dApps)",
+        "lectures": [
+          {
+            "lectureTitle": "Building dApps with Web3.js",
+            "duration": "10:30"
+          },
+          {
+            "lectureTitle": "Interacting with Smart Contracts in dApps",
+            "duration": "9:30"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Blockchain Security & Deployment",
+        "lectures": [
+          {
+            "lectureTitle": "Blockchain Security Principles",
+            "duration": "8:45"
+          },
+          {
+            "lectureTitle": "Deploying Smart Contracts on Ethereum",
+            "duration": "7:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5d725cfec4ded7bcb480eaa10",
+    "title": "Backend Development",
+    "description": "Master the fundamentals of server-side development with Node.js, Express, and database management.",
+    "weeks": 10,
+    "tuition": 6500,
+    "minimumSkill": "beginner",
+    "scholarshipAvailable": false,
+    "bootcamp": "5d713995b721c3bb38c1f5f1",
+    "user": "5d7a514b5d2c12c7449be043",
+    "image": "https://kvadrat.az/uploads/articles/674b66d290fcd.jpg",
+    "whatYouWillLearn": [
+      "Build RESTful APIs with Node.js and Express",
+      "Understand server-side concepts and architecture",
+      "Manage databases with MongoDB and SQL",
+      "Handle authentication and authorization",
+      "Work with asynchronous JavaScript (Promises, Async/Await)",
+      "Use Docker for containerization and deployment",
+      "Learn API documentation with Swagger",
+      "Deploy backend services to cloud platforms"
+    ],
+    "courseContent": [
+      {
+        "sectionTitle": "Introduction to Backend Development",
+        "lectures": [
+          {
+            "lectureTitle": "Setting Up Node.js & Express",
+            "duration": "8:30"
+          },
+          { "lectureTitle": "Building a Simple REST API", "duration": "10:00" }
+        ]
+      },
+      {
+        "sectionTitle": "Database Management",
+        "lectures": [
+          { "lectureTitle": "Working with MongoDB", "duration": "12:00" },
+          { "lectureTitle": "SQL Databases and ORM", "duration": "9:30" }
+        ]
+      },
+      {
+        "sectionTitle": "Authentication & Security",
+        "lectures": [
+          {
+            "lectureTitle": "User Authentication in APIs",
+            "duration": "11:00"
+          },
+          { "lectureTitle": "Securing APIs with JWT", "duration": "9:30" }
+        ]
+      },
+      {
+        "sectionTitle": "Deployment & Best Practices",
+        "lectures": [
+          { "lectureTitle": "Deploying with Docker", "duration": "7:30" },
+          { "lectureTitle": "Cloud Deployment and CI/CD", "duration": "8:15" }
+        ]
+      }
+    ]
   }
 ]
