@@ -18,7 +18,7 @@ const BootcampAdminSection = ({ _id: bootcampID, user: courseOwner }: Bootcamp) 
 
   return (
     <ShowAt at={role === 'admin' || courseOwner === userId}>
-      <div className="flex items-center gap-10 mb-10">
+      <div className="flex items-center max-sm:flex-col-reverse gap-10 mb-10">
         <EditBootcampForm id={bootcampID} />
         <DeleteBootcampBtn id={bootcampID} />
       </div>

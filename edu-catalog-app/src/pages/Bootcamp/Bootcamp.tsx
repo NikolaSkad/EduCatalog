@@ -22,7 +22,7 @@ const Bootcamp = () => {
       <BootcampAdminSection {...bootcamp} />
       {/* <div className="skeleton h-[350px] w-full"></div> */}
       <h1 className="text-center">{name}</h1>
-      <div className="flex items-center gap-20 max-md:flex-col my-10">
+      <div className="flex items-start gap-20 max-md:flex-col my-10">
         <div className="rounded-3xl w-[850px] min-h-[520px] overflow-hidden bg-base-200 mx-auto  flex-1 max-w-[calc(100dvw-24px)]">
           {photo && <img className="w-full h-full object-cover max-h-[600px]" src={bootcamp.photo} alt="Bootcamp" />}
         </div>
