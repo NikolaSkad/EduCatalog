@@ -1,0 +1,22 @@
+.layout {
+  background-image: url('/public/assets/images/main-bg.jpg');
+  background-size: cover;
+  z-index: 0;
+  min-height: 100dvh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .main-content {
+    min-height: calc(100dvh - 200px);
+  }
+
+  .content-wrapper {
+    &:has(.no-padding) {
+      padding: 0 !important;
+    }
+  }
+}
