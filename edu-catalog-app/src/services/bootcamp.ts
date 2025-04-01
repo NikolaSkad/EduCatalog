@@ -38,3 +38,9 @@ export const deleteBootcamp = async (id: string) => {
     isAuthed: true,
   });
 };
+
+export const getBootcampsForPublisher = async (): Promise<AllBootcampsResponse['data']> => {
+  const FETCH_BOOTCAMP_URL = `${config.API_URL}/bootcamps/me`;
+  const { data: bootcamps } = await _fetch<AllBootcampsResponse>(FETCH_BOOTCAMP_URL, { isAuthed: true });
+  return bootcamps;
+};

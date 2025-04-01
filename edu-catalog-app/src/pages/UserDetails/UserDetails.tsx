@@ -3,6 +3,7 @@ import { useAuthStore } from '@/store/auth';
 import EditUserInfo from './EditUserInfo/EditUserInfo';
 import UserInfo from './UserInfo/UserInfo';
 import EditPassword from './EditPassword/EditPassword';
+import PublisherBootcamps from './PublisherBootcamps/PublisherBootcamps';
 
 const UserDetails = () => {
   const { userInfo } = useAuthStore();
@@ -13,6 +14,7 @@ const UserDetails = () => {
         <UserInfo {...userInfo} />
         <EditUserInfo />
         <EditPassword />
+        <PublisherBootcamps />
       </div>
     </div>
   );

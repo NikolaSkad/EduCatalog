@@ -19,7 +19,7 @@ const Bootcamp = () => {
 
   return (
     <div>
-      <BootcampAdminSection id={id} />
+      <BootcampAdminSection {...bootcamp} />
       {/* <div className="skeleton h-[350px] w-full"></div> */}
       <h1 className="text-center">{name}</h1>
       <div className="flex items-center gap-20 max-md:flex-col my-10">
