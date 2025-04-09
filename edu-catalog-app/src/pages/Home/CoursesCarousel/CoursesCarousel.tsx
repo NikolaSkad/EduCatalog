@@ -19,7 +19,7 @@ const CoursesCarousel = () => {
 
   return (
     <>
-      <div className="absolute left-0 w-[100dvw]">
+      <div className="absolute left-0 w-[98dvw]">
         <Marquee speed={marqueeSpeed} direction="right" pauseOnHover>
           {courses.map(({ image, _id, title }) => (
             <a href={'/course/' + _id}>
