@@ -12,7 +12,7 @@ const ForgotPasswordModal = () => {
   };
 
   const handleSuccess = () => {
-    toast.success('You are successufully logged in!');
+    toast.success('Password reset request successful! Please check your email for further instructions.');
     closeForgotPasswordModal();
   };
 
