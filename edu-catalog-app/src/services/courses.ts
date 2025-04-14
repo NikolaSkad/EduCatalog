@@ -1,8 +1,10 @@
 import config from '@/config/config.json';
 import { _fetch } from './fetch';
-import { AllCoursesResponse, EditCoursePayloadWithOneRequired, SingleCourseResponse } from '@/interface/course';
+import { AllCoursesResponse, Course, EditCoursePayloadWithOneRequired, SingleCourseResponse } from '@/interface/course';
+import { CreateCoursePayload } from '@/interface/bootcamp';
 
 // 5
+// Get Course
 
 export const getAllCourses = async (): Promise<AllCoursesResponse['data']> => {
   const FETCH_ALL_COURSES_URL = `${config.API_URL}/courses`;
@@ -20,6 +22,23 @@ export const getSingleCourse = async (id: string): Promise<SingleCourseResponse[
   const FETCH_COURSE_URL = `${config.API_URL}/courses/${id}`;
   const { data: course } = await _fetch<SingleCourseResponse>(FETCH_COURSE_URL);
   return course;
+};
+
+// CRUD Course
+
+export const createCourse = async (bootcampId: string, payload: CreateCoursePayload): Promise<Course> => {
+  const body = JSON.stringify(payload);
+  const url = `${config.API_URL}/bootcamps/${bootcampId}/courses`;
+
+  const { data } = await _fetch<{ success: boolean; data: Course }>(url, {
+    method: 'POST',
+    body,
+    isAuthed: true,
+  });
+
+  console.log({ data });
+
+  return data;
 };
 
 export const editCourse = async (

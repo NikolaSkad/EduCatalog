@@ -58,3 +58,21 @@ export type CreateBootcampPayload = {
   jobAssistance?: boolean;
   jobGuarantee?: boolean;
 };
+
+export type CreateCoursePayload = {
+  title: string;
+  description: string;
+  weeks: string;
+  tuition: number;
+  minimumSkill: 'beginner' | 'intermediate' | 'advanced';
+  scholarshipAvailable?: boolean;
+  image?: string;
+  whatYouWillLearn?: string[];
+  courseContent?: {
+    sectionTitle: string;
+    lectures: {
+      lectureTitle: string;
+      duration: string;
+    }[];
+  }[];
+};

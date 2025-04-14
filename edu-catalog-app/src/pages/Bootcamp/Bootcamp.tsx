@@ -5,9 +5,12 @@ import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import Reviews from '@/components/Reviews/Reviews';
 import BootcampAdminSection from './BootcampAdminSection/BootcampAdminSection';
+import AddCourseForm from '../Course/AddCourseForm/AddCourseForm';
+import { useAuthStore } from '@/store/auth';
 
 const Bootcamp = () => {
   const { id } = useParams<{ id: string }>();
+  const { userInfo } = useAuthStore();
 
   const { data: bootcamp } = useQuery({ queryKey: ['bootcamp-by-id', id], queryFn: () => getBootcampById(id) });
   const { data: courses } = useQuery({
@@ -33,12 +36,13 @@ const Bootcamp = () => {
           </p>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 mb-6">
         <h2 className="font-medium text-4xl mb-5">All Courses from this Bootcamp</h2>
         <div className="grid grid-cols-2 gap-5 max-2xl:grid-cols-1">
           {courses?.map((course) => <CourseCard key={course._id} {...course} />)}
         </div>
       </div>
+      {(bootcamp?.user === userInfo?._id || userInfo?.role === 'admin') && <AddCourseForm bootcampId={id} />}
       <Reviews id={id} />
     </div>
   );
