@@ -44,3 +44,17 @@ export interface EditBootcampPayload {
 }
 
 export type EditBootcampPayloadWithOneRequired = AtLeastOne<EditBootcampPayload>;
+
+export type CreateBootcampPayload = {
+  name: string;
+  description: string;
+  website?: string;
+  phone?: string;
+  email?: string;
+  address: string;
+  careers: string[];
+  photo?: string;
+  housing?: boolean;
+  jobAssistance?: boolean;
+  jobGuarantee?: boolean;
+};

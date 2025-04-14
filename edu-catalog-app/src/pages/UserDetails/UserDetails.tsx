@@ -5,6 +5,7 @@ import EditPassword from './EditPassword/EditPassword';
 import PublisherBootcamps from './PublisherBootcamps/PublisherBootcamps';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import AddBootcampForm from '../Bootcamp/AddBootcampForm/AddBootcampForm';
 
 const UserDetails = () => {
   const { userInfo } = useAuthStore();

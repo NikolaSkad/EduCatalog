@@ -1,5 +1,4 @@
 import Button from '@/components/Button/Button';
-import { wait } from '@/services/async';
 import { deleteBootcamp } from '@/services/bootcamp';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
@@ -17,6 +16,7 @@ const DeleteBootcampBtn = ({ id }: { id: string }) => {
     onSuccess: () => {
       toast.success(`Your successfully delete this bootcamp!`);
       queryClient.invalidateQueries({ queryKey: ['all-bootcamps'] });
+      queryClient.invalidateQueries({ queryKey: ['bootcamps-publisher'] });
       navigate('/');
     },
   });
