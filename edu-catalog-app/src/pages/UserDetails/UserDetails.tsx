@@ -1,12 +1,26 @@
-import ExpandableSection from '@/components/ExpandableSection/ExpandableSection';
 import { useAuthStore } from '@/store/auth';
 import EditUserInfo from './EditUserInfo/EditUserInfo';
 import UserInfo from './UserInfo/UserInfo';
 import EditPassword from './EditPassword/EditPassword';
 import PublisherBootcamps from './PublisherBootcamps/PublisherBootcamps';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const UserDetails = () => {
   const { userInfo } = useAuthStore();
+  const navigate = useNavigate();
+
+  if (!userInfo) {
+    navigate('/');
+  }
+
+  useEffect(() => {
+    if (!userInfo) {
+      navigate('/');
+    }
+  }, [userInfo, navigate]);
+
+  if (!userInfo) return null;
 
   return (
     <div className="flex justify-center min-h-screen bg-base-200 rounded-2xl">
@@ -14,7 +28,7 @@ const UserDetails = () => {
         <UserInfo {...userInfo} />
         <EditUserInfo />
         <EditPassword />
-        <PublisherBootcamps />
+        {userInfo.role === 'publisher' && <PublisherBootcamps />}
       </div>
     </div>
   );
