@@ -8,14 +8,14 @@ interface IExtendedReviewProps extends IReview {
   bootcampId: string;
 }
 
-const Review: React.FC<IExtendedReviewProps> = ({ _id, rating, text, title, bootcampId }) => {
+const Review: React.FC<IExtendedReviewProps> = ({ _id, rating, text, title, bootcampId, user }) => {
   return (
     <div key={_id} className="card bg-base-300 shadow-xl p-4">
       <div className="card-body">
         <h2 className="card-title text-lg font-bold">{title}</h2>
         <p className="text-gray-600">{text}</p>
         <ReviewStars rating={rating} />
-        <AdminReviewSection id={_id} bootcampId={bootcampId} />
+        <AdminReviewSection reviewId={_id} userId={user} bootcampId={bootcampId} />
       </div>
     </div>
   );

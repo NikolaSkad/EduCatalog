@@ -10,11 +10,17 @@ import { editReview } from '@/services/revirews';
 import { AddReviewPayload, ReviewResponse } from '@/interface/revirews';
 import { toast } from 'sonner';
 
-const AdminReviewSection = ({ id, bootcampId }: { id: string; bootcampId: string }) => {
+const AdminReviewSection = ({
+  reviewId,
+  bootcampId,
+  userId,
+}: {
+  reviewId: string;
+  bootcampId: string;
+  userId: string;
+}) => {
   const { userInfo } = useAuthStore();
   const queryClient = useQueryClient();
-
-  const { role } = userInfo || {};
 
   const { register, handleSubmit, reset } = useForm<ReviewInputs>({
     defaultValues: {
@@ -25,7 +31,7 @@ const AdminReviewSection = ({ id, bootcampId }: { id: string; bootcampId: string
   });
 
   const { mutate } = useMutation<ReviewResponse['data'], Error, AddReviewPayload>({
-    mutationFn: (payload) => editReview(id, payload),
+    mutationFn: (payload) => editReview(reviewId, payload),
   });
 
   const onError = (errorMsg: string) => {
@@ -43,7 +49,7 @@ const AdminReviewSection = ({ id, bootcampId }: { id: string; bootcampId: string
     mutate(data, { onError, onSuccess });
   };
   return (
-    <ShowAt at={role === 'admin'}>
+    <ShowAt at={userInfo?.role === 'admin' || userInfo?._id === userId}>
       <div className="flex items-center gap-10 mx-auto">
         <CollapsibleForm onSubmit={handleSubmit(onSubmit)} title="Edit This Review">
           <div className="cards space-y-5">
@@ -77,7 +83,7 @@ const AdminReviewSection = ({ id, bootcampId }: { id: string; bootcampId: string
             </div>
           </div>
         </CollapsibleForm>
-        <DeleteReviewBtn id={id} bootcampId={bootcampId} />
+        <DeleteReviewBtn id={reviewId} bootcampId={bootcampId} />
       </div>
     </ShowAt>
   );

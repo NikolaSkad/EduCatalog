@@ -45,7 +45,7 @@ const Course = () => {
 
           <div className="card-body w-full lg:w-1/2">
             <div className="card-actions justify-end">
-              <ShowAt at={role === 'admin' || course.user === userInfo._id}>
+              <ShowAt at={role === 'admin' || course.user === userInfo?._id}>
                 <DeleteCourseBtn id={id!} />
               </ShowAt>
             </div>
@@ -106,7 +106,7 @@ const Course = () => {
         </section>
 
         {/* Edit Form (Admin Only) */}
-        <ShowAt at={role === 'admin' || course.user === userInfo._id}>
+        <ShowAt at={role === 'admin' || course.user === userInfo?._id}>
           <div className="card bg-base-100 shadow-xl mt-8 p-6">
             <h3 className="text-xl font-semibold mb-4">Edit Course</h3>
             <EditCourseForm id={id!} />
