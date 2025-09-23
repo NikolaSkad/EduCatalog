@@ -63,7 +63,7 @@ app.use(limiter);
 app.use(hpp());
 
 const corsOptions = {
-  origin: "http://localhost:5173", // Frontend origin
+  origin: ["http://localhost:5173", "http://localhost:5174"], // Frontend origins
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allowed methods
   allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
   credentials: true, // Allow credentials (cookies, etc.)
