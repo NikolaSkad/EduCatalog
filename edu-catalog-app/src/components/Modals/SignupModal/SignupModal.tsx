@@ -15,7 +15,7 @@ const SignupModal = () => {
     toast.error(errorMsg, { duration: 5000 });
   };
   const handleSuccess = (token: string) => {
-    toast.success('Please check your mail, we sent you the instructions for the reset password!');
+    toast.success('Registration successful! You are now logged in.');
     fetchUserInfo();
     closeSignUpModal();
   };
