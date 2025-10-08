@@ -13,14 +13,16 @@ type EditUserInputs = {
   role: string;
 };
 
-const EditUserAsAdminForm = ({ id }: { id: string }) => {
+const EditUserAsAdminForm = ({ id, name, email, role }: { id: string, name: string, email: string, role: string }) => {
   const { fetchUserInfo } = useAuthStore();
   const queryClient = useQueryClient();
 
   const { register, handleSubmit, reset } = useForm<EditUserInputs>({
     defaultValues: {
-      email: '',
-      name: '',
+      email: email,
+      name: name,
+      password: '',
+      role: role,
     },
   });
 
@@ -32,7 +34,7 @@ const EditUserAsAdminForm = ({ id }: { id: string }) => {
       toast.success('User edited successfully');
       fetchUserInfo();
       queryClient.invalidateQueries({ queryKey: ['all-users'] });
-      reset();
+      // reset();
     },
   });
 

@@ -15,7 +15,8 @@ const Home = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6">
         {bootcamps?.map((bootcamp) => <BootcampCard key={bootcamp.id} {...bootcamp} />)}
       </div>
-      <section className="mt-14">
+      <section className="mt-40">
+      <h1 className="mb-14">List of All Courses</h1>
         <CoursesCarousel />
       </section>
     </div>

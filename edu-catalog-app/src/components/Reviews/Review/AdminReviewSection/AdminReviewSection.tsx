@@ -14,10 +14,14 @@ const AdminReviewSection = ({
   reviewId,
   bootcampId,
   userId,
+  text="",
+  title="",
 }: {
   reviewId: string;
   bootcampId: string;
   userId: string;
+  text?: string;
+  title?: string;
 }) => {
   const { userInfo } = useAuthStore();
   const queryClient = useQueryClient();
@@ -25,8 +29,8 @@ const AdminReviewSection = ({
   const { register, handleSubmit, reset } = useForm<ReviewInputs>({
     defaultValues: {
       rating: 5,
-      text: '',
-      title: '',
+      text: text,
+      title: title,
     },
   });
 
@@ -41,7 +45,7 @@ const AdminReviewSection = ({
   const onSuccess = () => {
     toast.success(`You successfully edited this review!`);
     queryClient.invalidateQueries({ queryKey: ['reviews-for-bootcamp', bootcampId] });
-    reset();
+    // reset();
   };
 
   const onSubmit: SubmitHandler<ReviewInputs> = (data) => {

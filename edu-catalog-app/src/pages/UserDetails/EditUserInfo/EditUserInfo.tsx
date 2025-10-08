@@ -12,12 +12,12 @@ type EditUserInputs = {
 };
 
 const EditUserInfo = () => {
-  const { fetchUserInfo } = useAuthStore();
+  const { fetchUserInfo, userInfo } = useAuthStore();
 
   const { register, handleSubmit, reset } = useForm<EditUserInputs>({
     defaultValues: {
-      email: '',
-      name: '',
+      email: userInfo?.email || '',
+      name: userInfo?.name || '',
     },
   });
 
@@ -27,7 +27,7 @@ const EditUserInfo = () => {
     onSuccess: () => {
       toast.success('User edited successfully');
       fetchUserInfo();
-      reset();
+      // reset();
     },
   });
 

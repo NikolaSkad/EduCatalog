@@ -5,10 +5,15 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 
-const EditBootcampForm = ({ id }: { id: string }) => {
+const EditBootcampForm = ({ id, title, description }: { id: string, title: string, description: string }) => {
   const queryClient = useQueryClient();
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm({
+    defaultValues: {
+      title: title,
+      description: description,
+    },
+  });
 
   const { mutate } = useMutation<Bootcamp, Error, EditBootcampPayload>({
     mutationFn: (payload) => editBootcamp(id, payload),
@@ -23,7 +28,7 @@ const EditBootcampForm = ({ id }: { id: string }) => {
 
   const onSubmit = (data) => {
     // Only the title and description will be updated
-    mutate(data);
+    mutate({ ...data, name: data.title, description: data.description });
   };
 
   return (

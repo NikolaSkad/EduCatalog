@@ -12,14 +12,14 @@ interface EditBootcampInputs {
   image: string;
 }
 
-const BootcampAdminSection = ({ _id: bootcampID, user: courseOwner }: Bootcamp) => {
+const BootcampAdminSection = ({ _id: bootcampID, user: courseOwner, name: title, description }: Bootcamp) => {
   const { userInfo } = useAuthStore();
   const { role, _id: userId } = userInfo || {};
 
   return (
     <ShowAt at={role === 'admin' || courseOwner === userId}>
       <div className="flex items-center max-sm:flex-col-reverse gap-10 mb-10">
-        <EditBootcampForm id={bootcampID} />
+        <EditBootcampForm id={bootcampID} title={title} description={description} />
         <DeleteBootcampBtn id={bootcampID} />
       </div>
     </ShowAt>

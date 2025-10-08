@@ -15,7 +15,7 @@ const Review: React.FC<IExtendedReviewProps> = ({ _id, rating, text, title, boot
         <h2 className="card-title text-lg font-bold">{title}</h2>
         <p className="text-gray-600">{text}</p>
         <ReviewStars rating={rating} />
-        <AdminReviewSection reviewId={_id} userId={user} bootcampId={bootcampId} />
+        <AdminReviewSection reviewId={_id} userId={user} bootcampId={bootcampId} text={text} title={title} />
       </div>
     </div>
   );

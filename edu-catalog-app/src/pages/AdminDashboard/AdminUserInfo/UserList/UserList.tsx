@@ -11,7 +11,7 @@ const UserList = () => {
   return (
     <ExpandableSection title="User List">
       <div>
-        {users?.map(({ _id, name, email }) => (
+        {users?.map(({ _id, name, email, role }) => (
           <div className="bg-base-100 rounded-lg shadow-md mb-2 p-2">
             <div key={_id} className="p-4">
               <div className="flex items-center justify-between">
@@ -34,7 +34,7 @@ const UserList = () => {
                 </div>
               </div>
             </div>
-            <EditUserAsAdminForm id={_id} />
+            <EditUserAsAdminForm id={_id} name={name} email={email} role={role} />
           </div>
         ))}
       </div>
