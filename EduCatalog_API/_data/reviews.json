@@ -62,5 +62,61 @@
 		"rating": "7",
 		"bootcamp": "5d725a1b7b292f5f8ceff788",
 		"user": "5c8a1d5b0190b214360dc040"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be028",
+		"title": "Excellent AI curriculum!",
+		"text": "TechMasters exceeded my expectations. The AI Development course was comprehensive and the instructors were incredibly knowledgeable. The hands-on projects really helped me understand complex concepts. I landed a job as an AI engineer within 2 months of graduating!",
+		"rating": "10",
+		"bootcamp": "5d713995b721c3bb38c1f5f1",
+		"user": "5c8a1d5b0190b214360dc033"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be029",
+		"title": "Great career transition",
+		"text": "I came from a non-tech background and TechMasters helped me transition into backend development. The job guarantee program really delivered - they connected me with great companies and helped with interview prep. The housing option was also a huge plus.",
+		"rating": "9",
+		"bootcamp": "5d713995b721c3bb38c1f5f1",
+		"user": "5c8a1d5b0190b214360dc034"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be030",
+		"title": "Solid blockchain program",
+		"text": "The Blockchain Development track was solid. Learned Solidity, smart contracts, and DeFi concepts. My only critique is that some of the material felt rushed towards the end. Overall good value for money and the instructors were helpful.",
+		"rating": "8",
+		"bootcamp": "5d713995b721c3bb38c1f5f1",
+		"user": "5c8a1d5b0190b214360dc035"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be031",
+		"title": "Challenging but rewarding",
+		"text": "TechMasters pushes you hard, but in a good way. The curriculum is intense and you really need to dedicate yourself. The job assistance program is top-notch and the career counselors genuinely care about your success. Would recommend to anyone serious about tech.",
+		"rating": "9",
+		"bootcamp": "5d713995b721c3bb38c1f5f1",
+		"user": "5c8a1d5b0190b214360dc037"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be032",
+		"title": "Good but expensive",
+		"text": "The quality of education at TechMasters is undeniable, but it's definitely pricey. The full stack development program was comprehensive and I learned a lot. However, I wish there were more networking events with alumni. Still, I got a good job after graduating.",
+		"rating": "7",
+		"bootcamp": "5d713995b721c3bb38c1f5f1",
+		"user": "5c8a1d5b0190b214360dc038"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be033",
+		"title": "Best decision I made",
+		"text": "Enrolling in TechMasters was the best career decision I've made. The instructors are industry professionals who bring real-world experience to the classroom. The projects we worked on are now the centerpiece of my portfolio. Highly recommend!",
+		"rating": "10",
+		"bootcamp": "5d713995b721c3bb38c1f5f1",
+		"user": "5c8a1d5b0190b214360dc039"
+	},
+	{
+		"_id": "5d7a514b5d2c12c7449be034",
+		"title": "Great support system",
+		"text": "What stood out to me about TechMasters was the incredible support system. From teaching assistants to career advisors, everyone was invested in my success. The collaborative learning environment made tackling difficult concepts much easier. Would definitely do it again!",
+		"rating": "9",
+		"bootcamp": "5d713995b721c3bb38c1f5f1",
+		"user": "5c8a1d5b0190b214360dc040"
 	}
 ]
